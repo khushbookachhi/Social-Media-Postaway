@@ -7,6 +7,8 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import { connectUsingMongoose } from './src/config/mongooseConfig.js';
 import { ApplicationError } from './src/error-handler/applicationError.js';
+import loggerMiddleware from './src/middlewares/logger.middleware.js';
+import userRouter from './src/features/user/user.routes.js';
 //create server
 const server=express();
 const port=process.env.port;
@@ -16,6 +18,11 @@ var corsOptions = {
   }
   server.use(cors(corsOptions));
   server.use(bodyParser.json());
+//   use loggermiddleware 
+server.use(loggerMiddleware);
+
+//for all requests related to user,redirect to user routes
+server.use('/api/users',userRouter);
 //default request handler
 server.get('/',(req,res)=>{
     res.send("welcome to Ecommerce API");
@@ -23,6 +30,10 @@ server.get('/',(req,res)=>{
 //Error handler Middleware
 server.use((err,req,res,next)=>{
     console.log(err);
+    if(err instanceof mongoose.Error.ValidationError){
+        return res.status(400).send(err.message);
+       }
+       
     if(err instanceof ApplicationError){
         return res.status(err.code).send(err.message);
     }else{

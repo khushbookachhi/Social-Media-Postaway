@@ -1,0 +1,64 @@
+{"level":"info","message":"/api/users/signup-{\"name\":\"khushboo kachhi\",\"email\":\"khushbookachhi@gmail.com\",\"password\":\"khushboo\",\"gender\":\"female\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"khushboo kachhi\",\"email\":\"khushbookachhi@gmail.com\",\"password\":\"khushboo\",\"gender\":\"female\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"khushboo kachhi\",\"email\":\"khushbookachhi@gmail.com\",\"password\":\"khushboo\",\"gender\":\"female\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"khushboo kachhi\",\"email\":\"khushbookachhi@gmail.com\",\"password\":\"khushboo\",\"gender\":\"female\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"khushboo kachhi\",\"email\":\"khushbookachhi@gmail.com\",\"password\":\"khushboo\",\"gender\":\"female\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"khushboo kachhi\",\"email\":\"khushbookachhi@gmail.com\",\"password\":\"khushboo\",\"gender\":\"female\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"khushboo kachhi\",\"email\":\"khushbookachhi@gmail.com\",\"password\":\"khushboo\",\"gender\":\"female\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"khushboo kachhi\",\"email\":\"khushbookachhi@gmail.com\",\"password\":\"khushboo\",\"gender\":\"female\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"mansi patel\",\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\",\"gender\":\"female\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"rahul patel\",\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\",\"gender\":\"female\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signout-{\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signout-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/signout-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/signout-{\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signout-{\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signout-{\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signout-{\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signout-{\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signout-{\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-details?userID=65a4f4905e93db9642e85a59-{\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-details/65a4f4905e93db9642e85a59-{\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-details/65a4f4905e93db9642e85a59-{\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-details/65a4f4905e93db9642e85a59-{\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-details/65a4f4905e93db9642e85a59-{\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-details/65a4f4905e93db9642e85a59-{\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-details/65a4f4905e93db9642e85a59-{\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-details/65a4f4905e93db9642e85a59-{\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-all-details-{\"email\":\"mansiPatel@gmail.com\",\"password\":\"mansi\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{\"name\":\"riya rajak\",\"email\":\"riyaRajak@gmail.com\",\"password\":\"riya\",\"gender\":\"female\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-details?userID=65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-details/65a80c16451b89fdbbfe7190-{\"email\":\"rahulKachhi@gmail.com\",\"password\":\"rahul\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-details/65a80c16451b89fdbbfe7190-{\"email\":\"rahulKachhi@gmail.com\",\"password\":\"rahul\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-details/65a80c16451b89fdbbfe7190-{\"email\":\"rahulKachhi@gmail.com\",\"password\":\"rahul\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{\"email\":\"rahulKachhi@gmail.com\",\"password\":\"rahul\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/updates-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/get-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
+{"level":"info","message":"/api/users/update-details/65a80c16451b89fdbbfe7190-{}","service":"request-logging"}
