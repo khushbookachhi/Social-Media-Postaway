@@ -10,6 +10,8 @@ import { ApplicationError } from './src/error-handler/applicationError.js';
 import loggerMiddleware from './src/middlewares/logger.middleware.js';
 import userRouter from './src/features/user/user.routes.js';
 import postRouter from './src/features/post/post.routes.js';
+import commentRouter from './src/features/comment/comment.routes.js';
+import likeRouter from './src/features/like/like.routes.js';
 //create server
 const server=express();
 const port=process.env.port;
@@ -26,6 +28,10 @@ server.use(loggerMiddleware);
 server.use('/api/users',userRouter);
 //for all requests related to post,redirect to post routes
 server.use('/api/posts',postRouter);
+//for all requests related to comment on post,redirect to post routes
+server.use('/api/comments',commentRouter);
+//for all requests related to comment on post,redirect to post routes
+server.use('/api/likes',likeRouter);
 //default request handler
 server.get('/',(req,res)=>{
     res.send("welcome to Ecommerce API");
