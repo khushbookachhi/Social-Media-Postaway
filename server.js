@@ -12,6 +12,8 @@ import userRouter from './src/features/user/user.routes.js';
 import postRouter from './src/features/post/post.routes.js';
 import commentRouter from './src/features/comment/comment.routes.js';
 import likeRouter from './src/features/like/like.routes.js';
+import friendShipRouter from './src/features/frndship/frndship.routes.js';
+import otpRouter from './src/features/otp/otp.routes.js';
 //create server
 const server=express();
 const port=process.env.port;
@@ -32,6 +34,8 @@ server.use('/api/posts',postRouter);
 server.use('/api/comments',commentRouter);
 //for all requests related to comment on post,redirect to post routes
 server.use('/api/likes',likeRouter);
+server.use('/api/friends',friendShipRouter);
+server.use('/api/otp',otpRouter);
 //default request handler
 server.get('/',(req,res)=>{
     res.send("welcome to Ecommerce API");
