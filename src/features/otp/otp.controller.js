@@ -28,7 +28,7 @@ export class OtpController{
             if(isOtpMatch){
                 res.status(201).send("otp is varified");
             }else{
-                res.status(400).send("otp is not matched");
+                res.status(404).send("otp is not matched");
             }
         } catch (error) {
             console.log(error);
@@ -48,9 +48,9 @@ export class OtpController{
                 if(isOtpMatch){
                     await this.otpRepository.resetPassword(userID,hashPassword);
                    isOtpMatch=false;
-                    res.status(200).send("Password is updated");
+                    res.status(201).send("Password is updated");
                 }else{
-                    res.status(401).send("sent a new otp please");
+                    res.status(404).send("sent a new otp please");
                 }
            
             } catch (error) {

@@ -26,7 +26,7 @@ export class FriendShipController{
             if(pendingReq){
                 res.status(201).send(pendingReq);
             }else{
-                res.status(400).send("There is no pending request!!");
+                res.status(404).send("There is no pending request!!");
             }
            
         } catch (error) {
@@ -52,7 +52,7 @@ export class FriendShipController{
             if(friends){
                 res.status(201).send(friends);
             }else{
-                res.status(400).send("No friends of this user");
+                res.status(404).send("No friends of this user");
             }
           
 

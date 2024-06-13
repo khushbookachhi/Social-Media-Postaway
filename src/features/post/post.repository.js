@@ -8,11 +8,13 @@ import { ApplicationError } from "../../error-handler/applicationError.js";
 const PostModel=mongoose.model('Post',postSchema);
 // class for doing database operations on post data 
 export default class PostRepository{
+    //creating new post 
     async addPost(post){
         try {
             //create instance of model
             console.log("post userId is");
             console.log(post);
+            //new post is created
             const newPost=await PostModel.create({
             userID:post.UserID,
             caption:post.caption,
@@ -20,7 +22,7 @@ export default class PostRepository{
         });
             console.log(newPost);
             
-          return  await newPost.save();
+          return  await newPost.save(); //saved newpost
            
         } catch (error) {
             console.log(error);
@@ -28,8 +30,10 @@ export default class PostRepository{
             
         }
     }
+    //get all posts
     async getAllPosts(){
         try {
+            //finding post and populate with userID selected data
             const posts=await PostModel.find().lean().populate("userID",'_id name email');
             console.log("these are posts",posts);
             return posts;
@@ -38,9 +42,11 @@ export default class PostRepository{
             throw new ApplicationError("Something went wrong with database ",500); 
         }
     }
+    // get all posts of users by userID
     async getAll(userID){
         try {
-            const posts=await PostModel.findOne({
+            //finding post with userID and populate with userID selected data
+            const posts=await PostModel.find({
                 userID:userID
             }).lean().populate("userID",'_id name email');
             console.log("these are posts",posts);
@@ -52,7 +58,7 @@ export default class PostRepository{
     }
     async getById(postID){
         try {
-            const post= await PostModel.findOne(
+            const post= await PostModel.find(
              {_id:postID});  //mongoose.Types.ObjectId
              return post;
          } catch (error) {

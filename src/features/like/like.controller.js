@@ -24,6 +24,8 @@ export class LikeController{
             }else if(comment){
                 const commentLikes= await this.likeRepository.getLikeOnComment(id);
                 res.status(201).send(commentLikes);
+            }else{
+                res.status(404).send("no liked post or comment found");
             }
         } catch (error) {
             console.log(error);

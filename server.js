@@ -8,6 +8,9 @@ import mongoose from 'mongoose';
 import { connectUsingMongoose } from './src/config/mongooseConfig.js';
 import { ApplicationError } from './src/error-handler/applicationError.js';
 import loggerMiddleware from './src/middlewares/logger.middleware.js';
+
+import apiDocs from './swagger.json' assert {type:'json'};
+//importing all routes
 import userRouter from './src/features/user/user.routes.js';
 import postRouter from './src/features/post/post.routes.js';
 import commentRouter from './src/features/comment/comment.routes.js';
@@ -19,10 +22,12 @@ const server=express();
 const port=process.env.port;
 //CORS policy configuration
 var corsOptions = {
-    origin: `http://localhost:${port}`
+    origin: `http://localhost:5500`
   }
   server.use(cors(corsOptions));
   server.use(bodyParser.json());
+//  swagger open api for testing api
+  server.use("/api-docs",swagger.serve,swagger.setup(apiDocs));
 //   use loggermiddleware 
 server.use(loggerMiddleware);
 
@@ -32,21 +37,24 @@ server.use('/api/users',userRouter);
 server.use('/api/posts',postRouter);
 //for all requests related to comment on post,redirect to post routes
 server.use('/api/comments',commentRouter);
-//for all requests related to comment on post,redirect to post routes
+//for all requests related to like on post,redirect to post routes
 server.use('/api/likes',likeRouter);
+//for all requests related to friendship,redirect to post routes
 server.use('/api/friends',friendShipRouter);
+//for all requests related to otp,redirect to post routes
 server.use('/api/otp',otpRouter);
 //default request handler
 server.get('/',(req,res)=>{
-    res.send("welcome to Ecommerce API");
+    res.send("welcome to Social Media API");
 })
 //Error handler Middleware
 server.use((err,req,res,next)=>{
     console.log(err);
+     // err is of mongoose
     if(err instanceof mongoose.Error.ValidationError){
         return res.status(400).send(err.message);
        }
-       
+       // err is of application
     if(err instanceof ApplicationError){
         return res.status(err.code).send(err.message);
     }else{
@@ -62,5 +70,6 @@ server.use((req,res)=>{
 //specific port
 server.listen(port,()=>{
     console.log(`server is listening on port ${port}`);
+    //connection to mongoDB
     connectUsingMongoose();
 })
